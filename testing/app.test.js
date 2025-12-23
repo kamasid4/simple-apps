@@ -13,7 +13,7 @@ describe('Unit Test /', () => {
 });
 
 describe('Unit Test /app1', () => {
-    it('should respond with "Hello App1!"', async () => {
+    it('should respond with "Hello App1 sudah berjalan!"', async () => {
       const response = await request(app).get('/app1');
       expect(response.status).toBe(200);
     });
