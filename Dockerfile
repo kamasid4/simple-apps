@@ -12,6 +12,6 @@ CMD ["npm", "start"]
 FROM node:18-alpine as production
 WORKDIR /app
 COPY --from=build /app/node_modules ./node_modules
-COPY . .
+COPY app/. .
 EXPOSE 3000
 CMD ["npm", "start"]
